@@ -3,9 +3,9 @@ package main
 import (
 	"fmt"
 	"github.com/alexedwards/scs/v2"
-	"github.com/rudimuliawan/bookings/pkg/config"
-	"github.com/rudimuliawan/bookings/pkg/handlers"
-	"github.com/rudimuliawan/bookings/pkg/render"
+	"github.com/rudimuliawan/bookings/internal/config"
+	"github.com/rudimuliawan/bookings/internal/handlers"
+	"github.com/rudimuliawan/bookings/internal/render"
 	"log"
 	"net/http"
 	"time"
@@ -33,7 +33,7 @@ func main() {
 	}
 
 	app.TemplateCache = tc
-	app.UseCache = true
+	app.UseCache = false
 	app.InProduction = false
 
 	repo := handlers.NewRepo(&app)

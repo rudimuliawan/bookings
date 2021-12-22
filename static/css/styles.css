@@ -1,0 +1,13 @@
+.footer {
+    height: 5em;
+    background-color: #163B65;
+    margin-top: 1.5em;
+    padding: 1em;
+    color: #FFFFFF;
+    font-size: 80%;
+    text-align: center;
+}
+
+.room-image {
+    max-width: 50%;
+}
